@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'home#index'
+  root 'locations#index'
 
   resources :locations
   # The priority is based upon order of creation: first created -> highest priority.

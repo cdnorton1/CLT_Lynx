@@ -1,19 +1,15 @@
-<p id="notice"><%= notice %></p>
+<%= javascript_tag do %>
+	latitude = '<%= j @location.latitude.to_s %>';
+	longitude = '<%= j @location.longitude.to_s %>';
+<% end %>
+
 
 <p>
   <strong>Address:</strong>
   <%= @location.address %>
 </p>
 
-<p>
-  <strong>Latitude:</strong>
-  <%= @location.latitude %>
-</p>
+<div id="location-map"></div>
 
-<p>
-  <strong>Longitude:</strong>
-  <%= @location.longitude %>
-</p>
 
-<%= link_to 'Edit', edit_location_path(@location) %> |
 <%= link_to 'Back', locations_path %>

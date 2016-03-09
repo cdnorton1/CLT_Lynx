@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+.navbar-default {
+	background-color: #03033F;
+	border:1px solid #03033F;
+	color: #FFF;
+}
+
+.navbar-brand,
+.dropdown {
+	color: black;
+}
