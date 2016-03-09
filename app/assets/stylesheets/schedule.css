@@ -1,0 +1,120 @@
+/*COLOR SCHEME
+NAVY #03033F
+SAND/GOLD: #DAD4B9
+RED/ORANGE: #BF725B*/
+
+
+/*css*/
+
+/* Force scrollbars onto browser window */
+body {
+margin-bottom: 200%;
+}
+
+/* Box styles */
+.myBox {
+/*position: relative;*/
+border: none;
+padding: 5px;
+/*padding-top: 80px;*/
+/*width: 1000px;*/
+height: 300px;
+width: 1000px;
+overflow: scroll;
+}
+
+/* Scrollbar styles */
+/*::-webkit-scrollbar {
+width: 15px;
+height: 15px;
+}
+
+::-webkit-scrollbar-track {
+background: #BF725B;
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+border-radius: 10px;
+background: #03033F;  
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #DAD4B9;  
+}*/
+
+/* TABLE STYLES */
+head, body {
+/*	font-family: Helvetica;*/
+	font-color: #03033F;
+}
+
+
+table {
+	width: 100%;
+/*	background-color: white;*/
+	/*margin: 20px auto;*/
+	/*padding: 20px;*/
+/*	border-radius: 20px 0;
+}*//* don't use border-radius... will put table head and table body side-by-side*/
+
+tr {
+	height: 80px;
+	/*border-bottom: 1px solid #03033F;*/
+}
+
+/*th:only-child {
+	color: #0289d7;
+	font-size: 1.5em;
+	padding: 5px 0;
+}
+*/
+
+
+thead {
+   /* background-color: white;*/
+	position: static;
+	top: 300px;
+    text-align: left;
+	/*color: #03033F;*/
+	font-size: 14px;
+	padding: 10px 10;
+/*	width: 45%;
+*/}
+
+tbody {
+	padding-top: 40px;
+	position: static;
+}
+
+td {
+    text-align: left;
+	font-size: 14px;
+	padding: 5px 0;
+	width: 33%;
+}
+
+.weekdays {
+	border: 1px solid #03033F;
+
+}
+
+/*.flex thead {
+	display: flex; 
+	justify-content: space-around;
+	border-bottom: 1px solid #03033F;
+	align-items: center;
+	/*flex-direction: row-reverse;*/
+	flex-wrap: wrap;
+}*/
+.table striped{
+	
+}
+
+
+/*
+.right {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    background-color: #b0e0e6;*/

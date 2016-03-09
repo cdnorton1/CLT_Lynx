@@ -1,0 +1,128 @@
+/*First Table Row - Media / Prices */
+
+/*<th style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0); text-align: center; width: 20%; vertical-align: middle;"><p style="text-align: center;">
+*/
+
+
+/*COLOR SCHEME
+NAVY #03033F
+SAND/GOLD: #DAD4B9
+RED/ORANGE: #BF725B*/
+
+
+/*Head styling */
+
+p {
+	width: 800px;
+	font-style: italic;
+
+}
+/* Force scrollbars onto browser window */
+/*body {
+margin-bottom: 200%;
+}*/
+
+/* Box styles */
+/*.myBox {
+/*position: relative;*/
+/*border: 1px solid;
+padding: 5px;
+padding-top: 80px;
+height: 300px;
+width: 100px;
+overflow: auto;
+}*/
+
+/* Scrollbar styles */
+/*::-webkit-scrollbar {
+width: 15px;
+height: 15px;
+}
+
+::-webkit-scrollbar-track {
+background: #BF725B;
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+border-radius: 10px;
+background: #03033F;  
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #DAD4B9;  
+}*/
+
+/* TABLE STYLES */
+head, body {
+	font-family: Helvetica;
+	font-color: #BF725B;
+}
+
+thead {
+    /*background-color: white;*/
+	position: static;
+	/*top: 300px;*/
+    text-align: left;
+/*	color: #03033F;*/
+/*	font-size: 14px;*/
+	padding: 10px 10;
+/*	width: 45%;
+*/}
+
+table {
+	width: 80%;
+	/*background-color: white;*/
+	/*margin: 20px auto;*/
+	/*padding: 20px;*/
+/*	border-radius: 20px 0;
+}*//* don't use border-radius... will put table head and table body side-by-side*/
+
+tr:nth-child(even) {
+	background-color: rgb(75, 126, 190, 0.9);
+	/*height: 80px;*/
+	/*border-bottom: 1px solid #03033F;*/
+}
+
+th:only-child {
+	color: #0289d7;
+	font-size: 1.5em;
+	padding: 5px 0;
+}
+
+
+tbody {
+	padding-top: 40px;
+	position: static;
+}
+
+td {
+    text-align: left;
+	/*background-color: white;*/
+	font-size: 14px;
+	padding: 5px 0;
+	width: 33%;
+}
+.container {
+	background-color: rgba(218, 212, 185, 0.9);
+	width: 80%;
+}
+
+/*.flex {
+	display: flex; 
+	justify-content: space-around;
+	border: 1px solid #03033F;
+	align-items: center;
+	/*flex-direction: row-reverse;*/
+	flex-wrap: wrap;
+}*/
+.table striped{
+	
+}
+
+.Media_tickets table {
+	height: 200px;
+	width: 100px;
+	margin: 20px auto;
+	padding: 20px;
+}

@@ -13,13 +13,30 @@
  *= require_tree .
  *= require_self
  */
-.navbar-default {
+
+.navbar-inverse {
+	border: 1px solid #03033F;
 	background-color: #03033F;
-	border:1px solid #03033F;
-	color: #FFF;
+
 }
 
-.navbar-brand,
-.dropdown {
-	color: black;
+.container {
+	margin-top: 20px;
+	border-radius: 10px;
+	background-color: rgba(218, 212, 185, 0.9);
+	width: 80%;
+}
+
+body {
+	width: 100%;
+	background-image: url("Charlotte_skyline.jpg");
+	background-size: cover;
+}
+
+
+
+html, body {
+	height: 600px;
+	margin: 0;
+	padding: 0;
 }
