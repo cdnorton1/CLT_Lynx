@@ -1,0 +1,89 @@
+
+function initMap() {
+
+
+        navigator.geolocation.getCurrentPosition(showPosition);
+
+        function showPosition(position) {
+                 latlon = position.coords.latitude + "," + position.coords.longitude;
+                 return latlon;
+                }
+
+        var directionsDisplay = new google.maps.DirectionsRenderer;
+        var directionsService = new google.maps.DirectionsService;
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: {lat: 35.2217717, lng: -80.8356933}
+        });
+        directionsDisplay.setMap(map);
+        directionsDisplay.setPanel(document.getElementById('right-panel'));
+
+        var control = document.getElementById('floating-panel');
+        control.style.display = 'block';
+        map.controls[google.maps.ControlPosition.TOP_CENTER].push(control);
+
+        var onChangeHandler = function() {
+          calculateAndDisplayRoute(directionsService, directionsDisplay);
+        };
+        document.getElementById('start').addEventListener('change', onChangeHandler);
+        document.getElementById('end').addEventListener('change', onChangeHandler);
+
+          var image = "<%= asset_path('tram.png') %>"
+
+          var sblvd = new google.maps.LatLng(35.1070295, -80.8829326);
+          var sharon = new google.maps.LatLng(35.1194139, -80.8820638);
+          var arrow = new google.maps.LatLng(35.135515, -80.8763709);
+          var arch = new google.maps.LatLng(35.1527986, -80.8775566);
+          var tyvola = new google.maps.LatLng(35.1628085, -80.8776546);
+          var wood = new google.maps.LatLng(35.1757127, -80.8790678);
+          var scaley = new google.maps.LatLng(35.1907679, -80.8751421);
+          var newbern = new google.maps.LatLng(35.1997712, -80.8691472);
+          var eastwest = new google.maps.LatLng(35.2120217, -80.8591046);
+          var bland = new google.maps.LatLng(35.2157015, -80.8553309);
+          var carson = new google.maps.LatLng(35.2187649, -80.8509723);
+          var stone = new google.maps.LatLng(35.2212714, -80.8471146);
+          var third = new google.maps.LatLng(35.223575, -80.8433487);
+          var ctc = new google.maps.LatLng(35.225226, -80.8409483);
+          var seventh = new google.maps.LatLng(35.227315, -80.8381465);
+
+          var marker_sblvd = new google.maps.Marker ({position: sblvd, map: map, icon: image, animation: google.maps.Animation.DROP})
+          var marker_sharon = new google.maps.Marker ({position: sharon, map: map, icon: image, animation: google.maps.Animation.DROP})
+          var marker_arrow = new google.maps.Marker ({position: arrow, map: map, icon: image, animation: google.maps.Animation.DROP})
+          var marker_arch = new google.maps.Marker ({position: arch, map: map, icon: image, animation: google.maps.Animation.DROP})
+          var marker_tyvola = new google.maps.Marker ({position: tyvola, map: map, icon: image, animation: google.maps.Animation.DROP})
+          var marker_wood = new google.maps.Marker ({position: wood, map: map, icon: image, animation: google.maps.Animation.DROP})
+          var marker_scaley = new google.maps.Marker ({position: scaley, map: map, icon: image, animation: google.maps.Animation.DROP})
+          var marker_newbern = new google.maps.Marker ({position: newbern, map: map, icon: image, animation: google.maps.Animation.DROP})
+          var marker_eastwest = new google.maps.Marker ({position: eastwest, map: map, icon: image, animation: google.maps.Animation.DROP})
+          var marker_bland = new google.maps.Marker ({position: bland, map: map, icon: image, animation: google.maps.Animation.DROP})
+          var marker_carson = new google.maps.Marker ({position: carson, map: map, icon: image, animation: google.maps.Animation.DROP})
+          var marker_stone = new google.maps.Marker ({position: stone, map: map, icon: image, animation: google.maps.Animation.DROP})
+          var marker_third = new google.maps.Marker ({position: third, map: map, icon: image, animation: google.maps.Animation.DROP})
+          var marker_ctc = new google.maps.Marker ({position: ctc, map: map, icon: image, animation: google.maps.Animation.DROP})
+          var marker_seventh = new google.maps.Marker ({position: seventh, map: map, icon: image, animation: google.maps.Animation.DROP,})
+
+          var contentString_seventh = '<h1>7th Street Station</h1';
+
+          var infowindow_seventh = new google.maps.InfoWindow({content: contentString_seventh});
+
+          marker_seventh.addListener('click', function() {infowindow_seventh.open(map, marker_seventh);
+  });
+      }
+
+      function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+        start = latlon;
+        var end = document.getElementById('end').value;
+        directionsService.route({
+          origin: start,
+          destination: end,
+          travelMode: google.maps.TravelMode.DRIVING
+        }, function(response, status) {
+          if (status === google.maps.DirectionsStatus.OK) {
+            directionsDisplay.setDirections(response);
+          } else {
+            window.alert('Directions request failed due to ' + status);
+          }
+        });
+      }
+
+

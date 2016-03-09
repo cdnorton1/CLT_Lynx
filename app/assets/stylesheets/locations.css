@@ -28,7 +28,8 @@ body {
   top: 10px;
   left: 25%;
   z-index: 5;
-  background-color: #fff;
+  background-color: rgba(218, 212, 185, 0.9);
+  // background-color: #fff;
   padding: 5px;
   border: 1px solid #999;
   text-align: center;
@@ -63,7 +64,8 @@ body {
   margin-right: 400px;
 }
 #floating-panel {
-  background: #fff;
+  background-color: rgba(218, 212, 185, 0.9);
+  // background: #fff;
   padding: 5px;
   font-size: 14px;
   font-family: Arial;
