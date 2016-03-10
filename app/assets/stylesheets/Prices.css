@@ -90,7 +90,6 @@ th:only-child {
 	padding: 5px 0;
 }
 
-
 tbody {
 	padding-top: 40px;
 	position: static;
@@ -106,6 +105,7 @@ td {
 .container {
 	background-color: rgba(218, 212, 185, 0.9);
 	width: 80%;
+	padding: 5px;
 }
 
 /*.flex {
@@ -115,14 +115,35 @@ td {
 	align-items: center;
 	/*flex-direction: row-reverse;*/
 	flex-wrap: wrap;
-}*/
+}
 .table striped{
 	
 }
 
-.Media_tickets table {
-	height: 200px;
-	width: 100px;
-	margin: 20px auto;
-	padding: 20px;
+.Fares thead tr td {
+	font-weight: bold;
+	border-bottom: .5px solid #A8A48F;
+}
+
+.Fares tbody tr td {
+	border-bottom: .5px solid #A8A48F;
+}
+
+.tickets,
+.fare {
+	padding-left: 30px;
+}
+
+.tickets p,
+.fare p {
+	width: 100%;
+}
+
+.Media_tickets tbody tr td,
+.Media_tickets thead tr td {
+	border-bottom: .5px solid #A8A48F;
+}
+
+.Media_tickets {
+	margin: 20px 5px;
 }

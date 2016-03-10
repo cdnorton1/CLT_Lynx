@@ -99,6 +99,8 @@ td {
 
 }
 
+
+
 /*.flex thead {
 	display: flex; 
 	justify-content: space-around;
@@ -108,10 +110,12 @@ td {
 	flex-wrap: wrap;
 }*/
 .table striped{
-	
+	width: 100%;
 }
 
-
+.weekdays table table-striped {
+	width: 100%;
+}
 /*
 .right {
     position: absolute;

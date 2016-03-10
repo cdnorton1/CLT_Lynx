@@ -12,7 +12,7 @@ function initMap() {
         var directionsDisplay = new google.maps.DirectionsRenderer;
         var directionsService = new google.maps.DirectionsService;
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 11,
+          zoom: 12,
           center: {lat: 35.2217717, lng: -80.8356933}
         });
         directionsDisplay.setMap(map);
@@ -62,11 +62,54 @@ function initMap() {
           var marker_ctc = new google.maps.Marker ({position: ctc, map: map, icon: image, animation: google.maps.Animation.DROP})
           var marker_seventh = new google.maps.Marker ({position: seventh, map: map, icon: image, animation: google.maps.Animation.DROP,})
 
-          var contentString_seventh = '<h1>7th Street Station</h1';
+          var contentString_seventh = '<h3>7th Street Station</h3>';
+          var contentString_ctc = '<h2>CTC Charlotte Transportation Center/Arena Station</h2>';
+          // var contentString_third = '<h2>3rd Street Station</h2>';
+          // var contentString_stone = '<h2>Stonewall Station</h2>';
+          // var contentString_carson = '<h2>Carson Station</h2>';
+          // var contentString_bland = '<h2>Bland Station</h2>';
+          // var contentString_eastwest = '<h2>East/West Blvd Station</h2>';
+          // var contentString_newbern = '<h2>New Bern Station</h2>';
+          // var contentString_scaley = '<h2>Scaleybark Station</h2>';
+          // var contentString_wood = '<h2>Woodlawn Station</h2>';
+          // var contentString_tyvola = '<h2>Tyvola Station</h2>';
+          // var contentString_arch = '<h2>Archdale Station</h2>';
+          // var contentString_arrow = '<h2>Arrowood Station</h2>';
+          // var contentString_sharon = '<h2>Sharon Rd. Station</h2>';
+          // var contentString_sblvd = '<h2>I-485/South Blvd Station</h2>';
+        
 
           var infowindow_seventh = new google.maps.InfoWindow({content: contentString_seventh});
+          var infowindow_ctc = new google.maps.InfoWindow({content: contentString_ctc});
+          // var infowindow_third = new google.maps.InfoWindow({content: contentString_third});
+          // var infowindow_stone = new google.maps.InfoWindow({content: contentString_stone});
+          // var infowindow_carson = new google.maps.InfoWindow({content: contentString_carson});
+          // var infowindow_bland = new google.maps.InfoWindow({content: contentString_bland});
+          // var infowindow_eastwest = new google.maps.InfoWindow({content: contentString_eastwest});
+          // var infowindow_newbern = new google.maps.InfoWindow({content: contentString_newbern});
+          // var infowindow_scaley = new google.maps.InfoWindow({content: contentString_scaley});
+          // var infowindow_wood = new google.maps.InfoWindow({content: contentString_wood});
+          // var infowindow_tyvola = new google.maps.InfoWindow({content: contentString_tyvola});
+          // var infowindow_arch = new google.maps.InfoWindow({content: contentString_arch});
+          // var infowindow_arrow = new google.maps.InfoWindow({content: contentString_arrow});
+          // var infowindow_sharon = new google.maps.InfoWindow({content: contentString_sharon});
+          // var infowindow_sblvd  = new google.maps.InfoWindow({content: contentString_sblvd});
 
           marker_seventh.addListener('click', function() {infowindow_seventh.open(map, marker_seventh);
+          // marker_ctc.addListener('click', function() {infowindow_ctc.open(map, marker_ctc);
+          // marker_third.addListener('click', function() {infowindow_third.open(map, marker_third);
+          // marker_stone.addListener('click', function() {infowindow_stone.open(map, marker_stone);
+          // marker_carson.addListener('click', function() {infowindow_carson.open(map, marker_carson);
+          // marker_bland.addListener('click', function() {infowindow_bland.open(map, marker_bland);
+          // marker_eastwest.addListener('click', function() {infowindow_eastwest.open(map, marker_eastwest);
+          // marker_newbern.addListener('click', function() {infowindow_newbern.open(map, marker_newbern);
+          // marker_scaley.addListener('click', function() {infowindow_scaley.open(map, marker_scaley);
+          // marker_wood.addListener('click', function() {infowindow_wood.open(map, marker_wood);
+          // marker_tyvola.addListener('click', function() {infowindow_tyvola.open(map, marker_tyvola);
+          // marker_arch.addListener('click', function() {infowindow_arch.open(map, marker_arch);
+          // marker_arrow.addListener('click', function() {infowindow_sarrow.open(map, marker_arrow);
+          // marker_sharon.addListener('click', function() {infowindow_sharon.open(map, marker_sharon);
+          // marker_sblvd.addListener('click', function() {infowindow_sblvd.open(map, marker_sblvd);
   });
       }
 
