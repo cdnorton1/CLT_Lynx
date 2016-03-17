@@ -42,3 +42,14 @@ html, body {
 	margin: 0;
 	padding: 0;
 }
+
+#start {
+	display: inline-block;
+	width: 200px;
+}
+
+#start option {
+	display: inline-block;
+}
+
+
