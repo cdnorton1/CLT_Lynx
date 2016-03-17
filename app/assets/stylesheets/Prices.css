@@ -10,48 +10,13 @@ SAND/GOLD: #DAD4B9
 RED/ORANGE: #BF725B*/
 
 
-/*Head styling */
 
 p {
 	width: 800px;
 	font-style: italic;
 
 }
-/* Force scrollbars onto browser window */
-/*body {
-margin-bottom: 200%;
-}*/
 
-/* Box styles */
-/*.myBox {
-/*position: relative;*/
-/*border: 1px solid;
-padding: 5px;
-padding-top: 80px;
-height: 300px;
-width: 100px;
-overflow: auto;
-}*/
-
-/* Scrollbar styles */
-/*::-webkit-scrollbar {
-width: 15px;
-height: 15px;
-}
-
-::-webkit-scrollbar-track {
-background: #BF725B;
-border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-border-radius: 10px;
-background: #03033F;  
-}
-
-::-webkit-scrollbar-thumb:hover {
-background: #DAD4B9;  
-}*/
 
 /* TABLE STYLES */
 head, body {
