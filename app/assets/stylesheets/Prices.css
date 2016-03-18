@@ -44,7 +44,7 @@ table {
 }*//* don't use border-radius... will put table head and table body side-by-side*/
 
 tr:nth-child(even) {
-	background-color: rgb(75, 126, 190,);
+	background-color: rgb(75, 126, 190);
 	/*height: 80px;*/
 	/*border-bottom: 1px solid #03033F;*/
 }
