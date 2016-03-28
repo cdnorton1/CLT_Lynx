@@ -31,26 +31,6 @@ head, body {
 }
 
 
-/*table {
-	width: 100%;
-/*	background-color: white;*/
-	/*margin: 20px auto;*/
-	/*padding: 20px;*/
-	/*border-radius: 20px 0;*/
-
-
-
-/* don't use border-radius... will put table head and table body side-by-side
-
-}*/
-
-/*tr {
-	height: 80px;
-	border-bottom: 1px solid #03033F;
-}*/
-
-
-
 thead {
    /* background-color: white;*/
 	position: static;
@@ -59,8 +39,7 @@ thead {
 	/*color: #03033F;*/
 	font-size: 14px;
 	padding: 10px 10;
-/*	width: 45%;
-*/}
+}
 
 tbody {
 	padding-top: 40px;
@@ -72,29 +51,7 @@ th {
 	border-bottom: 2px solid #A8A48F;
 }
 
-td {
-    text-align: left;
-	font-size: 14px;
-	padding: 5px 0;
-	width: 33%;
-	border: .5px solid #A8A48F
-}
 
-/*.weekdays {
-	border: 1px solid #03033F;
-
-}*/
-
-
-
-/*.flex thead {
-	display: flex; 
-	justify-content: space-around;
-	border-bottom: 1px solid #03033F;
-	align-items: center;
-	/*flex-direction: row-reverse;*/
-	/*flex-wrap: wrap;
-}*/
 .table striped{
 	width: 100%;
 }
@@ -102,12 +59,7 @@ td {
 .weekdays table table-striped {
 	width: 100%;
 }
-/*
-.right {
-    position: absolute;
-    right: 0px;
-    width: 300px;
-    background-color: #b0e0e6;*/
+
 
 
   
