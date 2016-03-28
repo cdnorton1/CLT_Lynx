@@ -31,21 +31,23 @@ head, body {
 }
 
 
-table {
+/*table {
 	width: 100%;
 /*	background-color: white;*/
 	/*margin: 20px auto;*/
 	/*padding: 20px;*/
-/*	border-radius: 20px 0;
+	/*border-radius: 20px 0;*/
+
+
+
+/* don't use border-radius... will put table head and table body side-by-side
 
 }*/
 
-/* don't use border-radius... will put table head and table body side-by-side*/
-
-tr {
+/*tr {
 	height: 80px;
-	/*border-bottom: 1px solid #03033F;*/
-}
+	border-bottom: 1px solid #03033F;
+}*/
 
 
 
@@ -66,17 +68,22 @@ tbody {
 	
 }
 
+th {
+	border-bottom: 2px solid #A8A48F;
+}
+
 td {
     text-align: left;
 	font-size: 14px;
 	padding: 5px 0;
 	width: 33%;
+	border: .5px solid #A8A48F
 }
 
-.weekdays {
+/*.weekdays {
 	border: 1px solid #03033F;
 
-}
+}*/
 
 
 
@@ -86,8 +93,8 @@ td {
 	border-bottom: 1px solid #03033F;
 	align-items: center;
 	/*flex-direction: row-reverse;*/
-	flex-wrap: wrap;
-}
+	/*flex-wrap: wrap;
+}*/
 .table striped{
 	width: 100%;
 }

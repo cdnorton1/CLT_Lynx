@@ -42,12 +42,13 @@ table {
 	/*padding: 20px;*/
 /*	border-radius: 20px 0;
 }*//* don't use border-radius... will put table head and table body side-by-side*/
+}
 
-tr:nth-child(even) {
+/*tr:nth-child(even) {
 	background-color: rgb(75, 126, 190);
 	/*height: 80px;*/
 	/*border-bottom: 1px solid #03033F;*/
-}
+/*}*/
 
 th:only-child {
 	color: #0289d7;
@@ -79,11 +80,11 @@ td {
 	border: 1px solid #03033F;
 	align-items: center;
 	/*flex-direction: row-reverse;*/
-	flex-wrap: wrap;
-}
-.table striped{
+	/*flex-wrap: wrap;
+}*/
+/*.table striped{
 	
-}
+}*/
 
 .Fares thead tr td {
 	font-weight: bold;
